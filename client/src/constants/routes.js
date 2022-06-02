@@ -1,0 +1,9 @@
+export const LANDINGPAGE = '/';
+export const LOGIN = '/login';
+export const SIGN_UP = '/signup';
+export const DASHBOARD = '/dashboard';
+export const COURSES = '/dashboard/courses';
+export const TIMER = '/dashboard/timer';
+export const PROFILE = '/dashboard/profile';
+export const NOT_FOUND = '/notfound';
+export const LOGOUT = '/logout';

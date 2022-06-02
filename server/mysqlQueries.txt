@@ -1,0 +1,15 @@
+db.query(`SELECT * FROM user WHERE email="..."`, (err, result) => {
+        if(err){
+            throw err
+        }
+        else{
+            console.log("pritning db")
+            console.log(result) // prints whole db
+        }
+    })
+
+
+GETS ALL INFO FROM tasks and usertask BASED ON A SPECIFIED TASKID
+SELECT * FROM tasks
+JOIN usertask
+ON usertask.taskID = tasks.taskID;

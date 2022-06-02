@@ -1,0 +1,210 @@
+INSERT INTO `cmpt370`.`courses`
+(`courseID`,
+`courseName`)
+VALUES
+(1,
+"CMPT370");
+
+INSERT INTO `cmpt370`.`courses`
+(`courseID`,
+`courseName`)
+VALUES
+(2,
+"CMPT317");
+
+INSERT INTO `cmpt370`.`courses`
+(`courseID`,
+`courseName`)
+VALUES
+(3,
+"CHEM112");
+
+INSERT INTO `cmpt370`.`courses`
+(`courseID`,
+`courseName`)
+VALUES
+(4,
+"MATH327");
+
+INSERT INTO `cmpt370`.`usercourses`
+(`userID`,
+`courseID`,
+`courseImportance`)
+VALUES
+(16,
+1,
+2);
+
+INSERT INTO `cmpt370`.`usercourses`
+(`userID`,
+`courseID`,
+`courseImportance`)
+VALUES
+(16,
+2,
+5);
+
+INSERT INTO `cmpt370`.`usercourses`
+(`userID`,
+`courseID`,
+`courseImportance`)
+VALUES
+(16,
+3,
+1);
+
+INSERT INTO `cmpt370`.`usercourses`
+(`userID`,
+`courseID`,
+`courseImportance`)
+VALUES
+(16,
+4,
+4);
+
+INSERT INTO `cmpt370`.`tasks`
+(`taskID`,
+`courseID`,
+`taskType`,
+`taskDeadline`,
+`weightedGrade`,
+`taskName`)
+VALUES
+(1,
+1,
+"Assignment",
+"23/02/2012",
+"0.1",
+"Assignment 2");
+
+INSERT INTO `cmpt370`.`tasks`
+(`taskID`,
+`courseID`,
+`taskType`,
+`taskDeadline`,
+`weightedGrade`,
+`taskName`)
+VALUES
+(2,
+1,
+"Assignment",
+"24/02/2012",
+"0.1",
+"Assignment 1");
+
+INSERT INTO `cmpt370`.`tasks`
+(`taskID`,
+`courseID`,
+`taskType`,
+`taskDeadline`,
+`weightedGrade`,
+`taskName`)
+VALUES
+(3,
+1,
+"Assignment",
+"27/02/2012",
+"0.3",
+"Midterm 1");
+
+INSERT INTO `cmpt370`.`tasks`
+(`taskID`,
+`courseID`,
+`taskType`,
+`taskDeadline`,
+`weightedGrade`,
+`taskName`)
+VALUES
+(4,
+1,
+"Assignment",
+"24/02/2012",
+"0.3",
+"Midterm 2");
+
+INSERT INTO `cmpt370`.`tasks`
+(`taskID`,
+`courseID`,
+`taskType`,
+`taskDeadline`,
+`weightedGrade`,
+`taskName`)
+VALUES
+(5,
+1,
+"Assignment",
+"24/02/2012",
+"0.2",
+"Final");
+
+INSERT INTO `cmpt370`.`usertask`
+(`taskID`,
+`userID`,
+`difficulty`,
+`extendDeadline`,
+`finishedDate`,
+`secondSpent`,
+`note`)
+VALUES
+(1,
+16,
+4,
+null,
+null,
+0,
+"");
+
+INSERT INTO `cmpt370`.`usertask`
+(`taskID`,
+`userID`,
+`difficulty`,
+`extendDeadline`,
+`finishedDate`,
+`secondSpent`,
+`note`)
+VALUES
+(2,
+16,
+4,
+null,
+null,
+0,
+"");
+
+INSERT INTO `cmpt370`.`usertask`
+(`taskID`,
+`userID`,
+`difficulty`,
+`extendDeadline`,
+`finishedDate`,
+`secondSpent`,
+`note`)
+VALUES
+(3,
+16,
+4,
+null,
+null,
+0,
+"");
+
+INSERT INTO `cmpt370`.`usertask`
+(`taskID`,
+`userID`,
+`difficulty`,
+`extendDeadline`,
+`finishedDate`,
+`secondSpent`,
+`note`)
+VALUES
+(4,
+16,
+4,
+null,
+null,
+0,
+"");
+
+
+
+

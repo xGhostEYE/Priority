@@ -1,0 +1,7 @@
+/node_modules
+/controller/__pycache__
+/controller/Algorithm/__pycache__
+/controller/Algorithm/Subject_Properties/__pycache__
+/controller/Algorithm/Subjects/__pycache__
+/controller/Algorithm/Task_Properties/__pycache__
+/controller/Algorithm/Term/__pycache__

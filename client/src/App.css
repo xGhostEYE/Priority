@@ -1,0 +1,316 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.App-title{
+  width: 100%;
+  text-align: center;
+}
+
+.red{
+  color: red;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.signup_button{
+  background-color: #6aaa04;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+.login_button {
+  background-color: #6aaa04;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 5%;
+  
+  margin-bottom: 50;
+}
+
+.login_line{
+  width: 400px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.signup_line{
+  width: 400px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  margin-bottom: -330;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.nav-menu{
+  background-color: #fc275c;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active{
+  left: 0;
+  transition: 350ms;
+  position: absolute;
+  border-radius: 0.25rem;
+  z-index: 100;
+}
+
+.nav-menu-items{
+  width: 100%;
+}
+
+.nav-text{
+  display: flex;
+  color: #ffffff;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  padding-left: 50px;
+}
+
+.nav-text a{
+  text-decoration: none;
+  color: #f1356d;
+  font-size: 18px;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 1px;
+}
+
+.nav-text:hover{
+  background-color: white;
+}
+
+.navbar-toggle{
+  width: -100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 50px;
+}
+
+span{
+  margin-left: 16px;
+}
+
+.chart-wrap{
+  display: block;
+  margin-left: auto;
+  margin-right: fil;
+
+}
+
+.Dashboard{
+  display: flex; 
+  padding: 0; 
+  margin-left: 0;
+  margin-top: 1.5rem; 
+  justify-content: left; 
+  align-items: center; 
+  width: 100vw; 
+  height: 100vh;  
+}
+
+.sidebar{
+display: flex; 
+overflow: hidden;  
+color: red; 
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+width: 4rem; 
+height: 100%; 
+border-radius: 0.25rem; 
+}
+
+.menu-bars{
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.tab{
+  display: flex; 
+  overflow: auto;  
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%; 
+  height: 100%; 
+  border-radius: 0.25rem; 
+}
+
+.profileTab{
+  display: flex; 
+  overflow: auto;  
+  flex-direction:row; 
+  align-items:center; 
+  width: 100%; 
+  height: 100%; 
+  border-radius: 0.25rem; 
+}
+
+.profileTabComponent{
+  display: flex;  
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  margin: 100px;
+  border-radius: 0.25rem; 
+}
+
+.App-header{
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border-radius: 0.25rem; 
+}
+.App-header form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-input {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.tabComponent{
+  display: flex;  
+  flex-direction: column; 
+  align-items: center; 
+  width: 85%; 
+  height: 100%; 
+  border-radius: 0.25rem; 
+}
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  height: 300px;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid #999;
+  overflow: auto;
+}
+ 
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(25% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.setting-bars{
+  position: absolute;
+  right: 0px;
+  font-size: 2.5rem;
+  background: none;
+  margin-top: -4.0rem; 
+}
+
+.content {
+  text-align: justify;
+  margin-top: 25px;
+}
+
+#tabs {
+  margin-top: 60px;
+}
+
+.caption {
+  font-size: 16px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.Dropdown_timebank {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* background: deepskyblue; */
+}
